@@ -2,7 +2,7 @@
 {
     public enum GameStates
     {
-        Waiting,
+        Stop,
         Playing
     }
 }
