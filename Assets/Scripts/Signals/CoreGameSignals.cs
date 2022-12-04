@@ -12,6 +12,7 @@ namespace Signals
         public UnityAction onNextLevel = delegate {  };
         public UnityAction onLevelFailed = delegate {  };
         public UnityAction onLevelSuccessful = delegate {  };
+        public UnityAction<Transform,int> onParticleActive = delegate {  };
         public UnityAction<GameStates> onChangeGameState = delegate {  };
     }
 }

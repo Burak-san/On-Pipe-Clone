@@ -15,12 +15,12 @@ namespace Controllers.Player
 
             if (other.CompareTag("Obstacle"))
             {
-                HitObstacle();
+                HitObstacle(other);
             }
             
             if (other.CompareTag("LevelTrigger"))
             {
-                HitLevelTrigger();
+                HitLevelTrigger(other);
             }
         }
 
@@ -30,14 +30,16 @@ namespace Controllers.Player
             ScoreSignals.Instance.onGainScore?.Invoke();
         }
 
-        private void HitObstacle()
+        private void HitObstacle(Collider other)
         {
             CoreGameSignals.Instance.onLevelFailed?.Invoke();
+            CoreGameSignals.Instance.onParticleActive?.Invoke(other.transform,1);
         }
 
-        private void HitLevelTrigger()
+        private void HitLevelTrigger(Collider other)
         {
             CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+            CoreGameSignals.Instance.onParticleActive?.Invoke(other.transform,0);
         }
         
         private async void CornRigidbodyProcess(Collider other)
