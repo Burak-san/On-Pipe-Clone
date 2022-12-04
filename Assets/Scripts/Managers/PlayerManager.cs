@@ -8,7 +8,6 @@ namespace Managers
     {
         [SerializeField] private PlayerMeshController _playerMeshController;
         
-        
         #region Event Subscription
 
         private void OnEnable()
@@ -21,7 +20,7 @@ namespace Managers
             InputSignals.Instance.onInputTaken += _playerMeshController.GetPipeScale;
             InputSignals.Instance.onInputReleased += _playerMeshController.GetFirstScale;
         }
-        
+
         private void UnSubscribeEvents()
         {
             InputSignals.Instance.onInputTaken -= _playerMeshController.GetPipeScale;
@@ -34,5 +33,8 @@ namespace Managers
         }
 
         #endregion
+
+        
+
     }
 }

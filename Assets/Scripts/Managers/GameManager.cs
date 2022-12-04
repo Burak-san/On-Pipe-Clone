@@ -29,14 +29,19 @@ namespace Managers
         {
             CoreGameSignals.Instance.onPlay += OnPlay;
             CoreGameSignals.Instance.onReset += OnReset;
+            CoreGameSignals.Instance.onLevelFailed += OnReset;
+            CoreGameSignals.Instance.onLevelSuccessful += OnReset;
         }
         
         private void UnSubscribeEvents()
         {
             CoreGameSignals.Instance.onPlay -= OnPlay;
             CoreGameSignals.Instance.onReset -= OnReset;
+            CoreGameSignals.Instance.onLevelFailed -= OnReset;
+            CoreGameSignals.Instance.onLevelSuccessful -= OnReset;
         }
         
+
         private void OnDisable()
         {
             UnSubscribeEvents();

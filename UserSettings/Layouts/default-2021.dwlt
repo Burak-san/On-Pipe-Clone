@@ -97,8 +97,8 @@ MonoBehaviour:
     y: 0
     width: 623
     height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 99
+  controlID: 73
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 98
+  controlID: 72
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 68
+  controlID: 71
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -546,22 +546,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Asus\Documents\Unity\OnPipeClone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ca6d0000
-    m_LastClickedID: 28106
-    m_ExpandedIDs: 00000000006d0000026d0000126d0000466e0000a69f0000c49f000004a7000016a700000ea800004aa90000e0a90000eeab000066ad0000
+    m_SelectedIDs: 4a7d0000
+    m_LastClickedID: 32074
+    m_ExpandedIDs: 000000004a7d00004c7d00004e7d0000507d0000527d0000547d0000567d0000587d00005a7d00005c7d00005e7d0000607d0000627d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -589,7 +589,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000006d0000026d0000
+    m_ExpandedIDs: 000000004a7d00004c7d00004e7d0000507d0000527d0000547d0000567d0000587d00005a7d00005c7d00005e7d0000607d0000627d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -707,7 +707,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -964,9 +964,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -10.051178, y: 0.81395066, z: 9.497738}
+    m_Target: {x: -15.60858, y: 29.299002, z: 10.318945}
     speed: 2
-    m_Value: {x: -10.051177, y: 0.8139509, z: 9.497738}
+    m_Value: {x: -15.60858, y: 29.299002, z: 10.318945}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1013,13 +1013,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.12988397, y: 0.39851618, z: -0.0560419, w: -0.906386}
+    m_Target: {x: 0.11803512, y: 0.4590072, z: 0.06284067, w: -0.8785175}
     speed: 2
-    m_Value: {x: -0.1285012, y: 0.39852786, z: -0.05543369, w: -0.9064161}
+    m_Value: {x: 0.116696306, y: 0.45901793, z: 0.06214045, w: -0.8785346}
   m_Size:
-    m_Target: 10.222525
+    m_Target: 19.029184
     speed: 2
-    m_Value: 10.222525
+    m_Value: 19.029184
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1075,10 +1075,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 294}
-      m_SelectedIDs: 0c32f6ff
-      m_LastClickedID: -642548
-      m_ExpandedIDs: 762df2ff782df2ff00b6f2ffb8f6f3ff0c32f6ff921cf7ff9c1cf7ffa2ccfdffaaccfdffb4ccfdffb287feffc2a3feff9a76ffff12fbfffff66b0000086c00001c6c0000306c0000446c00004c6c00005c6c00006e6c00007c6c0000b66c0000ba6c0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: da6c0000
+      m_LastClickedID: 27866
+      m_ExpandedIDs: 10fbffff12fbffff6a6c0000aa6c0000ca6c0000da6c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
