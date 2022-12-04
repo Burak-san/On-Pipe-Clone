@@ -1,4 +1,5 @@
-﻿using Signals;
+﻿using System.Threading.Tasks;
+using Signals;
 using UnityEngine;
 
 namespace Controllers.Player
@@ -39,12 +40,15 @@ namespace Controllers.Player
             CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
         }
         
-        private void CornRigidbodyProcess(Collider other)
+        private async void CornRigidbodyProcess(Collider other)
         {
             var otherRb = other.GetComponent<Rigidbody>();
             otherRb.isKinematic = false;
             otherRb.AddForce(otherRb.position ,ForceMode.Impulse);
             other.enabled = false;
+
+            await Task.Delay(2000);
+            PoolSignals.Instance.onReturnToPool?.Invoke("Corn",other.gameObject);
         }
     }
 }
