@@ -10,7 +10,6 @@ namespace Managers
     {
         [SerializeField] private UIPanelController _uıPanelController;
         [SerializeField] private TextMeshProUGUI startPanelCoin;
-        [SerializeField] private TextMeshProUGUI failPanelCompleted;
         [SerializeField] private TextMeshProUGUI gamePanelLevel;
         [SerializeField] private TextMeshProUGUI winPanelLevel;
         [SerializeField] private TextMeshProUGUI failPanelLevel;
@@ -31,7 +30,6 @@ namespace Managers
             UISignals.Instance.onClosePanel += OnClosePanel;
             UISignals.Instance.onSetLevelText += OnSetLevelText;
             UISignals.Instance.onSetTotalScoreText += OnSetTotalScoreText;
-            UISignals.Instance.onSetCompletedText += OnSetCompletedText;
             UISignals.Instance.onSetCoinText += OnSetCoinText;
 
             CoreGameSignals.Instance.onPlay += OnPlay;
@@ -48,7 +46,6 @@ namespace Managers
             UISignals.Instance.onClosePanel -= OnClosePanel;
             UISignals.Instance.onSetLevelText -= OnSetLevelText;
             UISignals.Instance.onSetTotalScoreText -= OnSetTotalScoreText;
-            UISignals.Instance.onSetCompletedText -= OnSetCompletedText;
             UISignals.Instance.onSetCoinText -= OnSetCoinText;
 
             CoreGameSignals.Instance.onPlay -= OnPlay;
@@ -100,13 +97,8 @@ namespace Managers
         private void OnSetTotalScoreText(int value)
         {
             gamePanelTotalScore.text = value.ToString();
-            failPanelTotalScore.text = value.ToString();
-            winPanelTotalScore.text = value.ToString();
-        }
-
-        private void OnSetCompletedText(int value)
-        {
-            failPanelCompleted.text = "COMPLETED " + value.ToString() + "%";
+            failPanelTotalScore.text = "TOTAL SCORE " + value.ToString();
+            winPanelTotalScore.text = "TOTAL SCORE " + value.ToString();
         }
 
         private void OnSetCoinText(int value)

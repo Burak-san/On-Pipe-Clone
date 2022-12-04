@@ -1,8 +1,5 @@
-﻿using System;
-using DG.Tweening;
-using Signals;
+﻿using Signals;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Controllers.Player
 {
@@ -28,10 +25,8 @@ namespace Controllers.Player
 
         private void HitCorn(Collider other)
         {
-            var otherRb = other.GetComponent<Rigidbody>();
-            otherRb.isKinematic = false;
-            otherRb.AddForce(otherRb.position ,ForceMode.Impulse);
-            other.enabled = false;
+            CornRigidbodyProcess(other);
+            ScoreSignals.Instance.onGainScore?.Invoke();
         }
 
         private void HitObstacle()
@@ -42,6 +37,14 @@ namespace Controllers.Player
         private void HitLevelTrigger()
         {
             CoreGameSignals.Instance.onLevelSuccessful?.Invoke();
+        }
+        
+        private void CornRigidbodyProcess(Collider other)
+        {
+            var otherRb = other.GetComponent<Rigidbody>();
+            otherRb.isKinematic = false;
+            otherRb.AddForce(otherRb.position ,ForceMode.Impulse);
+            other.enabled = false;
         }
     }
 }
